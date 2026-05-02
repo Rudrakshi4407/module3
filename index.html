@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chemistry Course Feedback Form</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><i class="bi bi-flask"></i> Chemistry Feedback</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Form</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Main Content -->
+<div class="container my-5">
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
+      <div class="card shadow-lg border-0">
+        <div class="card-header bg-primary text-white">
+          <h4 class="mb-0"><i class="bi bi-pencil-square"></i> Chemistry Course Feedback Form</h4>
+        </div>
+        <div class="card-body p-4">
+          <form action="#" method="post" class="needs-validation" novalidate>
+            
+            <!-- Student Info -->
+            <div class="mb-3">
+              <label for="name" class="form-label">Your Name</label>
+              <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="email" class="form-label">Your Email</label>
+              <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+
+            <!-- Course Rating -->
+            <div class="mb-3">
+              <label for="rating" class="form-label">Rate the Chemistry course (1 = Poor, 10 = Excellent)</label>
+              <input type="range" class="form-range" id="rating" name="rating" min="1" max="10" required>
+            </div>
+
+            <!-- Difficulty -->
+            <div class="mb-3">
+              <label class="form-label">Course Difficulty</label>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="difficulty" value="Easy" required>
+                <label class="form-check-label">Easy</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="difficulty" value="Moderate" required>
+                <label class="form-check-label">Moderate</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="difficulty" value="Hard" required>
+                <label class="form-check-label">Hard</label>
+              </div>
+            </div>
+
+            <!-- Branch of Chemistry -->
+            <div class="mb-3">
+              <label for="branch" class="form-label">Most Challenging Branch</label>
+              <select class="form-select" id="branch" name="branch" required>
+                <option value="">--Select--</option>
+                <option value="Organic">Organic Chemistry</option>
+                <option value="Inorganic">Inorganic Chemistry</option>
+                <option value="Physical">Physical Chemistry</option>
+                <option value="Analytical">Analytical Chemistry</option>
+                <option value="Biochemistry">Biochemistry</option>
+              </select>
+            </div>
+
+            <!-- Favorite Topic -->
+            <div class="mb-3">
+              <label for="favorite" class="form-label">Your Favorite Topic</label>
+              <input type="text" class="form-control" id="favorite" name="favorite" placeholder="e.g., Chemical Bonding, Thermodynamics" required>
+            </div>
+
+            <!-- Lab Experience -->
+            <div class="mb-3">
+              <label for="lab" class="form-label">Rate your Lab/Practical experience (1 = Poor, 10 = Excellent)</label>
+              <input type="range" class="form-range" id="lab" name="lab" min="1" max="10" required>
+            </div>
+
+            <!-- Comments -->
+            <div class="mb-3">
+              <label for="comments" class="form-label">Comments</label>
+              <textarea class="form-control" id="comments" name="comments" rows="3" required></textarea>
+            </div>
+
+            <!-- Suggestions -->
+            <div class="mb-3">
+              <label for="suggestions" class="form-label">Suggestions for Improvement</label>
+              <textarea class="form-control" id="suggestions" name="suggestions" rows="3" required></textarea>
+            </div>
+
+            <!-- Confirmation -->
+            <div class="form-check mb-3">
+              <input class="form-check-input" type="checkbox" id="confirm" name="confirm" required>
+              <label class="form-check-label" for="confirm">I confirm that my feedback is honest and accurate.</label>
+            </div>
+
+            <!-- Submit -->
+            <button type="submit" class="btn btn-success w-100">
+              <i class="bi bi-send-fill"></i> Submit Feedback
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
